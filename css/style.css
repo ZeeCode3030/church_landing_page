@@ -1,0 +1,18 @@
+main {
+  padding-right: 10pt;
+  padding-left: 10pt;
+}
+
+img {
+  opacity: 0.5;
+  height: 300px;
+  weight: 300px;
+}
+
+.card {
+    margin: 10pt;
+}
+.card-img-overlay {
+  /* padding-top: 45%; */
+  text-align: bottom;
+}
