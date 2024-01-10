@@ -1,3 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Lemon&family=Salsa&display=swap');
+nav, .navbar-brand{
+    font-size:x-large !important;
+    text-shadow: 0 0 10px;
+    font-family: 'Lemon', serif;
+    padding-left: 30px;
+}
+
+
 main {
   padding-right: 10pt;
   padding-left: 10pt;
@@ -5,14 +14,19 @@ main {
 
 img {
   opacity: 0.5;
+  content: inherit;
   height: 300px;
-  weight: 300px;
 }
 
 .card {
-    margin: 10pt;
+  margin: 7pt;
+  font-family: 'Salsa', cursive;
+
 }
 .card-img-overlay {
   /* padding-top: 45%; */
   text-align: bottom;
+}
+button{
+    font-weight: 300;
 }

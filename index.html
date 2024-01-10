@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <head>
   <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Landing page</title>
   <link
     href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
@@ -10,164 +12,135 @@
   />
   <link rel="stylesheet" href="./css/bootstrap.min.css" type="text/css" />
   <link rel="stylesheet" href="./css/style.css" type="text/css" />
-  <nav class="navbar navbar-expand-lg bg-primary" data-bs-theme="dark">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#">Navbar</a>
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-bs-toggle="collapse"
-        data-bs-target="#navbarColor01"
-        aria-controls="navbarColor01"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarColor01">
-        <ul class="navbar-nav me-auto">
-          <li class="nav-item">
-            <a class="nav-link active" href="#"
-              >Home
-              <span class="visually-hidden">(current)</span>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Features</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Pricing</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">About</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a
-              class="nav-link dropdown-toggle"
-              data-bs-toggle="dropdown"
-              href="#"
-              role="button"
-              aria-haspopup="true"
-              aria-expanded="false"
-              >Dropdown</a
-            >
-            <div class="dropdown-menu">
-              <a class="dropdown-item" href="#">Action</a>
-              <a class="dropdown-item" href="#">Another action</a>
-              <a class="dropdown-item" href="#">Something else here</a>
-              <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="#">Separated link</a>
-            </div>
-          </li>
-        </ul>
-        <form class="d-flex">
-          <input
-            class="form-control me-sm-2"
-            type="search"
-            placeholder="Search"
-          />
-          <button class="btn btn-secondary my-2 my-sm-0" type="submit">
-            Search
-          </button>
-        </form>
-      </div>
-    </div>
-  </nav>
+ 
 </head>
 
 <body>
+     <nav class="navbar navbar-expand-lg bg-primary" data-bs-theme="dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#" onclick="start(), stop()">WELCOME</a>
+             </div>
+    <script src="confetti.js"></script>
+    <script>
+    // for starting the confetti 
+        const start = () => {
+            setTimeout(function() {
+                confetti.start()
+            }, 1000); // 1000 is time that after 1 second start the confetti ( 1000 = 1 sec)
+        };
+        //  for stopping the confetti 
+        const stop = () => {
+            setTimeout(function() {
+                confetti.stop()
+            }, 5000); // 5000 is time that after 5 second stop the confetti ( 5000 = 5 sec)
+        };
+// after this here we are calling both the function so it works
+        start();
+        stop();
+       // if you dont want to make it stop and make it infinite you can just remove the stop function 😊
+</script>
+     </nav>
   <main>
-    <div class="card-group">
-
+   
+    <div class="row">
+      <div class="col-sm-6 mb-3 mb-sm-0">
         <div class="card">
+          <div class="card text-bg-dark">
+            <img
+              src="./Images/website.jpg"
+              class="card-img"
+              alt="Screenshot of website"
+            />
+            <div class="card-img-overlay">
+              <h5 class="card-title">Our Website</h5>
+              <p class="card-text"></p>
+              <a href="https://mfm-site-next-zgxn.vercel.app/" class="btn btn-primary">Visit</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-6">
+        <div class="card">
+          <div class="card text-bg-dark">
+            <img
+              src="./Images/dmytro-demidko-eBWzFKahEaU-unsplash.jpg"
+              class="card-img"
+              alt="Currency"
+            />
+            <div class="card-img-overlay">
+              <h5 class="card-title">Offerings and Donations</h5>
+              <p class="card-text"></p>
+              <a href="https://giving.mfmtoronto1.org/" class="btn btn-primary">Give Now</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-sm-6 mb-3 mb-sm-0">
+        <div class="card">
+          <div class="card text-bg-dark">
+            <img
+              src="./Images/deliverance.jpg"
+              class="card-img"
+              alt="Delivered fist raised"
+            />
+            <div class="card-img-overlay">
+              <h5 class="card-title">Deliverance</h5>
+              <p class="card-text"></p>
+              <a href="https://mfm-site-next-zgxn.vercel.app/deliverance" class="btn btn-primary">Sign up</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-6">
+        <div class="card">
+          <div class="card text-bg-dark">
+            <img
+              src="./Images/community.jpg"
+              class="card-img"
+              alt="worshippers in concert"
+            />
+            <div class="card-img-overlay">
+              <h5 class="card-title">Our Services</h5>
+              <p class="card-text"></p>
+              <a href="https://mfm-site-next-zgxn.vercel.app/about" class="btn btn-primary">Join us</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+      <div class="row">
+        <div class="col-sm-6 mb-3 mb-sm-0">
+          <div class="card">
             <div class="card text-bg-dark">
               <img
-                src="./Images/website.png"
+                src="./Images/teamwork.jpg"
                 class="card-img"
-                alt="https://unsplash.com/photos/three-round-gold-colored-coins-on-100-us-dollar-banknotes-eBWzFKahEaU?utm_content=creditShareLink&utm_medium=referral&utm_source=unsplash"
+                alt="friends silhouette"
               />
               <div class="card-img-overlay">
-                <h5 class="card-title">Visit our Website</h5>
+                <h5 class="card-title">Volunteering</h5>
                 <p class="card-text"></p>
-                <p class="card-text"><small>Last updated 3 mins ago</small></p>
-              </div>
+                <a href="https://mfm-site-next-zgxn.vercel.app/volunteer" class="btn btn-primary">Learn more</a>
             </div>
-          </div>    
-
-      <div class="card">
-        <div class="card text-bg-dark">
-          <img
-            src="./Images/dmytro-demidko-eBWzFKahEaU-unsplash.jpg"
-            class="card-img"
-            alt="https://unsplash.com/photos/three-round-gold-colored-coins-on-100-us-dollar-banknotes-eBWzFKahEaU?utm_content=creditShareLink&utm_medium=referral&utm_source=unsplash"
-          />
-          <div class="card-img-overlay">
-            <h5 class="card-title">Offerings and Donations</h5>
-            <p class="card-text"></p>
-            <button type="button" class="btn btn-primary">Give Now</button>
-          </div>
-        </div>
-      </div>
-
-      
-      <div class="card-group">
-      <div class="card">
-        <div class="card text-bg-dark">
-          <img
-            src="./Images/dmytro-demidko-eBWzFKahEaU-unsplash.jpg"
-            class="card-img"
-            alt="https://unsplash.com/photos/three-round-gold-colored-coins-on-100-us-dollar-banknotes-eBWzFKahEaU?utm_content=creditShareLink&utm_medium=referral&utm_source=unsplash"
-          />
-          <div class="card-img-overlay">
-            <h5 class="card-title">Offerings and Donations</h5>
-            <p class="card-text"></p>
-            <p class="card-text"><small>Last updated 3 mins ago</small></p>
-          </div>
-        </div>
-      </div>
-
-        <div class="card">
-          <div class="card text-bg-dark">
-            <img
-              src="./Images/dmytro-demidko-eBWzFKahEaU-unsplash.jpg"
-              class="card-img"
-              alt="https://unsplash.com/photos/three-round-gold-colored-coins-on-100-us-dollar-banknotes-eBWzFKahEaU?utm_content=creditShareLink&utm_medium=referral&utm_source=unsplash"
-            />
-            <div class="card-img-overlay">
-              <h5 class="card-title">Offerings and Donations</h5>
-              <p class="card-text"></p>
-              <p class="card-text"><small>Last updated 3 mins ago</small></p>
             </div>
           </div>
         </div>
 
-      <div class="card-group">
-        <div class="card">
-          <div class="card text-bg-dark">
-            <img
-              src="./Images/dmytro-demidko-eBWzFKahEaU-unsplash.jpg"
-              class="card-img"
-              alt="https://unsplash.com/photos/three-round-gold-colored-coins-on-100-us-dollar-banknotes-eBWzFKahEaU?utm_content=creditShareLink&utm_medium=referral&utm_source=unsplash"
-            />
-            <div class="card-img-overlay">
-              <h5 class="card-title">Offerings and Donations</h5>
-              <p class="card-text"></p>
-              <p class="card-text"><small>Last updated 3 mins ago</small></p>
+        <div class="col-sm-6">
+          <div class="card">
+            <div class="card text-bg-dark">
+              <img src="./Images/contact.jpg" class="card-img" alt="phone" />
+              <div class="card-img-overlay">
+                <h5 class="card-title">Connect with us</h5>
+                <p class="card-text"></p>
+                <a href="https://mfm-site-next-zgxn.vercel.app/contact" class="btn btn-primary" >Contact us</a>
             </div>
-          </div>
-        </div>
-
-        <div class="card">
-          <div class="card text-bg-dark">
-            <img
-              src="./Images/dmytro-demidko-eBWzFKahEaU-unsplash.jpg"
-              class="card-img"
-              alt="https://unsplash.com/photos/three-round-gold-colored-coins-on-100-us-dollar-banknotes-eBWzFKahEaU?utm_content=creditShareLink&utm_medium=referral&utm_source=unsplash"
-            />
-            <div class="card-img-overlay">
-              <h5 class="card-title">Offerings and Donations</h5>
-              <p class="card-text"></p>
-              <p class="card-text"><small>Last updated 3 mins ago</small></p>
             </div>
           </div>
         </div>
@@ -175,9 +148,5 @@
     </div>
   </main>
 
-  <footer>
-    <div>
-    This is the footer
-</div>  
-</footer>
+  
 </body>
