@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Landing page</title>
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+    crossorigin="anonymous"
+  />
+  <link rel="stylesheet" href="./css/bootstrap.min.css" type="text/css" />
+  <link rel="stylesheet" href="./css/style.css" type="text/css" />
+ 
+</head>
+
+<body>
+     <nav class="navbar navbar-expand-lg bg-primary" data-bs-theme="dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#" onclick="start(), stop()">WELCOME</a>
+             </div>
+    <script src="confetti.js"></script>
+    <script>
+    // for starting the confetti 
+        const start = () => {
+            setTimeout(function() {
+                confetti.start()
+            }, 1000); // 1000 is time that after 1 second start the confetti ( 1000 = 1 sec)
+        };
+        //  for stopping the confetti 
+        const stop = () => {
+            setTimeout(function() {
+                confetti.stop()
+            }, 5000); // 5000 is time that after 5 second stop the confetti ( 5000 = 5 sec)
+        };
+// after this here we are calling both the function so it works
+        start();
+        stop();
+       // if you dont want to make it stop and make it infinite you can just remove the stop function 😊
+</script>
+     </nav>
+  <main>
+   
+    <div class="row">
+      <div class="col-sm-6 mb-3 mb-sm-0">
+        <div class="card">
+          <div class="card text-bg-dark">
+            <img
+              src="./Images/website.jpg"
+              class="card-img"
+              alt="Screenshot of website"
+            />
+            <div class="card-img-overlay">
+              <h5 class="card-title">Our Website</h5>
+              <p class="card-text"></p>
+              <a href="https://mfm-site-next-zgxn.vercel.app/" class="btn btn-primary">Visit</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-6">
+        <div class="card">
+          <div class="card text-bg-dark">
+            <img
+              src="./Images/fruit _offerring.jpg"
+              class="card-img"
+              alt="Currency"
+            />
+            <div class="card-img-overlay">
+              <h5 class="card-title">Offerings and Donations</h5>
+              <p class="card-text"></p>
+              <a href="https://giving.mfmtoronto1.org/" class="btn btn-primary">Give Now</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-sm-6 mb-3 mb-sm-0">
+        <div class="card">
+          <div class="card text-bg-dark">
+            <img
+              src="./Images/freedom.jpg"
+              class="card-img"
+              alt="Delivered person breaking chains"
+            />
+            <div class="card-img-overlay">
+              <h5 class="card-title">Deliverance</h5>
+              <p class="card-text"></p>
+              <a href="https://mfm-site-next-zgxn.vercel.app/deliverance" class="btn btn-primary">Sign up</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-6">
+        <div class="card">
+          <div class="card text-bg-dark">
+            <img
+              src="./Images/community.jpg"
+              class="card-img"
+              alt="worshippers in concert"
+            />
+            <div class="card-img-overlay">
+              <h5 class="card-title">Our Services</h5>
+              <p class="card-text"></p>
+              <a href="https://mfm-site-next-zgxn.vercel.app/about" class="btn btn-primary">Join us</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+      <div class="row">
+        <div class="col-sm-6 mb-3 mb-sm-0">
+          <div class="card">
+            <div class="card text-bg-dark">
+              <img
+                src="./Images/teamwork.jpg"
+                class="card-img"
+                alt="friends silhouette"
+              />
+              <div class="card-img-overlay">
+                <h5 class="card-title">Volunteering</h5>
+                <p class="card-text"></p>
+                <a href="https://mfm-site-next-zgxn.vercel.app/volunteer" class="btn btn-primary">Learn more</a>
+            </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-6">
+          <div class="card">
+            <div class="card text-bg-dark">
+              <img src="./Images/contact.jpg" class="card-img" alt="phone" />
+              <div class="card-img-overlay">
+                <h5 class="card-title">Connect with us</h5>
+                <p class="card-text"></p>
+                <a href="https://mfm-site-next-zgxn.vercel.app/contact" class="btn btn-primary" >Contact us</a>
+            </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-6 mb-3 mb-sm-0">
+          <div class="card">
+            <div class="card text-bg-dark">
+              <img
+                src="./Images/gorgeous_happy_girl.jpg"
+                class="card-img"
+                alt="friends silhouette"
+              />
+              <div class="card-img-overlay">
+                <h5 class="card-title">Testimonies</h5>
+                <p class="card-text"></p>
+                <a href="https://mfm-site-next-zgxn.vercel.app" class="btn btn-primary">Share now</a>
+            </div>
+            </div>
+          </div>
+        </div>
+
+    </div>
+  </main>
+
+  
+</body>
