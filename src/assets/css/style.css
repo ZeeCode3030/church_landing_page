@@ -1,9 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Lemon&family=Salsa&display=swap');
-nav, .navbar-brand{
+nav,.navbar, .navbar-brand{
     font-size:x-large !important;
     text-shadow: 0 0 10px;
     font-family: 'Lemon', serif;
     padding-left: 30px;
+    background-color: #901B76 !important;
+    
 }
 
 
