@@ -1,13 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Lemon&family=Salsa&display=swap');
-nav,.navbar, .navbar-brand{
+nav,.navbar, .navbar-brand {
     font-size:x-large !important;
     text-shadow: 0 0 10px;
     font-family: 'Lemon', serif;
-    padding-left: 30px;
+    padding-left: 25px;
     background-color: #901B76 !important;
+    justify-content: space-between;
     
 }
-
+/* .container-fluid{
+  justify-content: start !important;
+} */
+.split{
+  align-items: right;
+  padding-right: 20px;
+}
 
 main {
   padding-right: 10pt;
@@ -23,8 +30,14 @@ img {
 .card {
   margin: 7pt;
   font-family: 'Salsa', cursive;
-
 }
+
+.img-fluid{
+  opacity: 100%;
+  width: 60px;
+  height: 60px;
+}
+
 .card-img-overlay {
   /* padding-top: 45%; */
   text-align: bottom;
